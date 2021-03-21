@@ -1,0 +1,21 @@
+{
+  "name": "bar-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "browserify ./src/app.js > ./dist/bundle.js -d",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify ./src/app.js > ./dist/bundle.js",
+    "watch": "watchify ./src/app.js -o ./dist/bundle.js -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "d3": "^6.6.0"
+  }
+}

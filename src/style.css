@@ -1,0 +1,47 @@
+body {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;  /* centers svg and title */
+}
+
+.container {
+    height: 600px;
+    width: 900px;
+    position: absolute;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+#toolTip {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(176, 221, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    pointer-events: none;
+}
+
+#toolTip > p {
+    margin: 0;
+}
+
+#title {
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+#bar {
+    fill: lightseagreen;
+}
+
+#bar:hover {
+    fill: rgb(11, 211, 11);
+}
